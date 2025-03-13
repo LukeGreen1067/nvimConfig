@@ -30,4 +30,7 @@ return {
   		},
   	},
   },
+
+  -- https://dotfyle.com/plugins/ray-x/lsp_signature.nvim
+  -- https://github.com/rmagatti/auto-session
 }
