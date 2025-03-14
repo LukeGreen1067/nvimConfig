@@ -28,6 +28,9 @@ require("lazy").setup({
 
 require('render-markdown').enable()
 
+local cfg = {}  -- add your config here
+require "lsp_signature".setup(cfg)
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
