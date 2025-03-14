@@ -30,7 +30,22 @@ return {
   		},
   	},
   },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "VeryLazy",
+    opts = {},
+    config = function(_, opts) require("lsp_signature").setup(opts) end
+  },
+  {
+    'rmagatti/auto-session',
+    lazy = false,
 
-  -- https://dotfyle.com/plugins/ray-x/lsp_signature.nvim
-  -- https://github.com/rmagatti/auto-session
+    ---enables autocomplete for opts
+    ---@module "auto-session"
+    ---@type AutoSession.Config
+    opts = {
+      suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
+      -- log_level = 'debug',
+    }
+  },
 }
